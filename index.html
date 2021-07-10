@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CMoney線上訂餐" />
+    <title>CMoney訂餐系統</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/all.css" />
+  </head>
+  <body class="container mx-auto">
+    <div id="Order">
+      <header><h1>CMoney 線上訂餐</h1></header>
+      <p>您好！歡迎光臨 ~ 請輸入所需的餐點數量</p>
+      <main>
+        <section class="product">
+          <h2>雞腿飯</h2>
+          <div>
+            <span class="money">100元</span>
+            <span class="amount">數量：</span>
+          </div>
+          <input
+            id="Input_ch"
+            type="text"
+            value="0"
+            style="text-align: right"
+          />
+        </section>
+
+        <section class="product">
+          <h2>排骨飯</h2>
+          <div>
+            <span class="money">80元</span>
+            <span class="amount">數量：</span>
+          </div>
+          <input id="Input_p" type="text" value="0" style="text-align: right" />
+        </section>
+
+        <section class="product">
+          <h2>控肉飯</h2>
+          <div>
+            <span class="money">70元</span>
+            <span class="amount">數量：</span>
+          </div>
+          <input id="Input_c" type="text" value="0" style="text-align: right" />
+        </section>
+
+        <section class="product">
+          <h2>魚排飯</h2>
+          <div>
+            <span class="money">85元</span>
+            <span class="amount">數量：</span>
+          </div>
+          <input id="Input_f" type="text" value="0" style="text-align: right" />
+        </section>
+      </main>
+      <button id="Next" type="button">下一步</button>
+    </div>
+
+    <article id="Cart" class="container mx-auto">
+      <header><h1>CMoney 線上訂餐</h1></header>
+      <p>以下是您的餐點明細：</p>
+      <main>
+        <section class="product">
+          <h2>小計：</h2>
+          <span id="Total" class="total"> </span>
+        </section>
+
+        <section class="product">
+          <h2>折數：</h2>
+          <span class="discount"> 0.8 </span>
+        </section>
+
+        <section class="product">
+          <h2>運費：</h2>
+          <span class="shipment"> 30 </span>
+        </section>
+
+        <section class="product">
+          <h2>合計：</h2>
+          <span id="Pay" class="pay"> </span>
+        </section>
+      </main>
+      <button id="Submit" type="button">確認</button>
+    </article>
+
+    <div id="End" class="container mx-auto end disshow">
+      <p>CMoney線上訂餐</p>
+      <p>謝謝您的光臨！</p>
+    </div>
+
+    <script src="./js/click.js"></script>
+  </body>
+</html>
